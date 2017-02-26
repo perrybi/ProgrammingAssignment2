@@ -28,7 +28,7 @@ cacheSolve <- function(x, ...) {
     return(inv) # returns the cached inverse and skips the recomputation of the inverse
   }
   data <- x$get() # otherwise, get the matrix x
-  inv <- solve(data, ...) # compute the inverse
-  x$setinv(inv) # saves the computed inverse in the cahce
+  inv <- solve(data, ...) # computes the inverse
+  x$setinv(inv) # saves the computed inverse in the cache
   inv # returns the inv
 }
